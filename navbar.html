@@ -1,1 +1,32 @@
-<h1>Hello world</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Add CORS headers using JavaScript -->
+    <script>
+        // Set CORS headers
+        const setCorsHeaders = () => {
+            const allowedOrigins = ['https://coryprimm.github.io']; // Replace with your domain
+            const origin = window.location.origin;
+
+            if (allowedOrigins.includes(origin)) {
+                // Set the allowed origin in the response header
+                document.domain = 'github.io'; // Replace with your domain
+            }
+        };
+
+        // Call the function to set CORS headers
+        setCorsHeaders();
+    </script>
+    <!-- End of CORS headers -->
+</head>
+<body>
+    <!-- Your navbar content here -->
+	<nav id="navbar" class="airbnb-navbar">
+	    <a href="#text_floating"><span class="material-symbols-outlined"><img src="home.svg" alt="Home Icon"></span> Home</a>
+	    <a href="#text_box"><span class="material-symbols-outlined"><img src="work_history.svg" alt="Work History Icon"></span> About</a>
+	    <a href="#worktitle"><span class="material-symbols-outlined"><img src="travel_explore.svg" alt="Travel Explore Icon"></span> Experiences</a>
+	    <a href="#contactme"><span class="material-symbols-outlined"><img src="contact_mail.svg" alt="Contact Mail Icon"></span> Contact</a>
+  </nav>
+</body>
+</html>
+
