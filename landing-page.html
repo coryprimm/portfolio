@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Add CORS headers using JavaScript -->
+		<script>
+	        // Set CORS headers
+	        const setCorsHeaders = () => {
+	            const allowedOrigins = ['https://coryprimm.github.io']; // Replace with your domain
+	            const origin = window.location.origin;
+
+	            if (allowedOrigins.includes(origin)) {
+	                // Set the allowed origin in the response header
+	                document.domain = 'github.io'; // Replace with your domain
+	            }
+	        };
+
+	        // Call the function to set CORS headers
+	        setCorsHeaders();
+	    </script>
+	    <!-- End of CORS headers -->
+	</head>
+	<body>
+		<div id="home_universe">
+
+			<div id="text_floating">
+				<h1>Cory Primm</h1>
+				<h2>Full Stack Developer</h2>
+			</div>
+
+			<div id="picture_floating"></div>
+
+			<div id="impact_statement">
+				<h1> A developer who works with the <span id="django">Django</span>, <span id="sb">Spring Boot</span> and <span id="m">MEAN</span> stacks.</h1>
+				<h1> /* with a splash of <span id="perl">Perl</span>, and <span id="aws">Bash</span> */ </h1>
+			</div>
+			<div id="next">
+				<a class="scroll-link" href="#about-marker" id="downtick">▼</a>
+			</div>
+		</div>
+	</body>
+</html>
